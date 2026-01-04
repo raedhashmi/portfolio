@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
-import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "lrDevstudio",
-  description: "The studio of devs by devs.",
+  title: "Raed | Developer Portfolio",
+  description: "Full-stack developer focused on infrastructure, automation, and web systems.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-[#0b0e14] text-slate-200 antialiased">
         {children}
       </body>
     </html>
